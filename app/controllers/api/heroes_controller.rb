@@ -1,4 +1,7 @@
 class Api::HeroesController < ApplicationController
+  include Authenticable
+
+  before_action :authenticate_with_token, except: %i[index show]
   before_action :set_hero, only: [:show, :update, :destroy]
 
   # GET /heroes
@@ -39,13 +42,13 @@ class Api::HeroesController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_hero
-      @hero = Hero.find(params[:id])
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_hero
+    @hero = Hero.find(params[:id])
+  end
 
-    # Only allow a trusted parameter "white list" through.
-    def hero_params
-      params.require(:hero).permit(:name)
-    end
+  # Only allow a trusted parameter "white list" through.
+  def hero_params
+    params.require(:hero).permit(:name)
+  end
 end
