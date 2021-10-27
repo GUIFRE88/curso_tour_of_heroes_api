@@ -1,24 +1,20 @@
-# README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+---
+<h1 align="center">
+  🚀 Api Ruby on Rails
+</h1>
+<br>
 
-Things you may want to cover:
+Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-* Ruby version
+- [Ruby](https://www.ruby-lang.org/pt/)
+- [Rails](https://rubyonrails.org/)
 
-* System dependencies
+## 💻 Projeto
 
-* Configuration
+Esse projeto foi desenvolvido para testar as principais funcionalidades de Rails Only Api. 
 
-* Database creation
+##  💻 Exemplo do App
+![alt text](https://github.com/GUIFRE88/curso_tour_of_heroes_api/blob/master/tourofheroes)
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+----
